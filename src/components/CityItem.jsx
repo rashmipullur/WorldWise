@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import styles from "./CityItem.module.css";
-import PropTypes from "prop-types";
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat("en", {
@@ -28,8 +27,5 @@ function CityItem({ city }) {
   );
 }
 
-CityItem.propTypes = {
-  city: PropTypes.object,
-};
 
 export default CityItem;
