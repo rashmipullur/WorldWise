@@ -53,7 +53,6 @@ function Form() {
             throw new Error(
               "That doesn't seem to be a city. Click somewhere else. 😶‍🌫️"
             );
-          console.log(data);
           setCityName(data.city || data.locality || "");
           setCountry(data.countryName);
           setEmoji(convertToEmoji(data.countryCode));
